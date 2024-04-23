@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@ 0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-primaria: blueviolet;
+    --cor-secundaria: #6A947C;
+    --cor-terciaria: #1eaec7;
+    --cor-bg: #0f1046;
+    --cor-texto: aliceblue;
+
+    --font-principal: "Jersey 20 Charted", sans-serif;
+}
+
+.sedan-regular-italic {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-bg);
+    color: var(--cor-texto);
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+    width: 100%;
+    font-family: "Jersey 20 Charted"
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+
+.apresentacao_descricao {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+   
+    
+}
+
+
+.apresentacao_links {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0 0 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_links_link {
+    color: var(--cor-texto);
+    width: 280px;
+    text-align: center;
+    border: 2px solid var(--cor-texto);
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 14px 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho_menu_link {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.titulo destaque {
+    color: var(--cor-terciaria);
+    font-weight: bold;
+}
+
+strong {
+    color: #f3f3f3;
+    font-weight: bold;
+
+}
+
+p {
+    color: var(--cor-texto);
+}
+
+.sobre-mim {
+    color: rgb(185, 219, 34);
+}
+
+.diego-imagem {
+    width: 600px;
+    border-radius: 100px;
+    border: solid rgb(255, 255, 255) 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+a:hover {
+    border-color: red
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.apresentacao_links_link_faviicon {
+    width: 18px;
+}
+
+.rodape {
+    padding: 24px;
+    color: cyan;
+    background-color: blueviolet;
+
+
+}
+
+@media (max-width:1200px) {
+
+    .diego-imagem {
+        width: 300px;
+    }
+    .apresentacao{
+        flex-direction: column;
+    }
+}
